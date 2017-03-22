@@ -16,8 +16,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
 
-    private ViewPager viewPager;
-    private LinearLayout pointLayout;
     private List<ImageView> pointList;
 
     @Override
@@ -28,8 +26,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     }
 
     private void initView() {
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
-        pointLayout = (LinearLayout) findViewById(R.id.point_layout);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        LinearLayout pointLayout = (LinearLayout) findViewById(R.id.point_layout);
 
         List<View> views = new ArrayList<>();
         TextView textView;
