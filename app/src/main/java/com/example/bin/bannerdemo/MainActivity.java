@@ -48,10 +48,11 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         pointList = new ArrayList<>();
         for (int i = 0; i < views.size(); i++) {
             ImageView point = new ImageView(this);
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -2);
-            layoutParams.rightMargin = 12; //设置边距
-            layoutParams.leftMargin = 12; //设置边距
-            point.setLayoutParams(layoutParams);
+//            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -2);
+//            layoutParams.rightMargin = 12; //设置边距
+//            layoutParams.leftMargin = 12; //设置边距
+//            point.setLayoutParams(layoutParams);
+            point.setPadding(5,0,5,0);
             if (i == 0) {
                 point.setImageResource(R.drawable.banner_point_select);
             } else {
